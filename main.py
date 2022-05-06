@@ -1,9 +1,8 @@
 from flask import Flask, render_template, request
-import time
-from flightsearch import FlightSearch
-from search_dates import SearchDates
-from sms_alert import SMSAlert
-from email_alert import EmailAlert
+from modules.flightsearch import FlightSearch
+from modules.search_dates import SearchDates
+from modules.sms_alert import SMSAlert
+from modules.email_alert import EmailAlert
 
 app = Flask(__name__)
 
@@ -29,7 +28,6 @@ def home():
 
         flight_config = flight_search.flight_information(find_city_dep_code, find_city_arri_code, start_date, to_date)
 
-        time.sleep(5)
 
         if choice_communication == "phone":
             sms_alert.set_up(name, communication, flight_config['dep_city'], flight_config['dep_code'],

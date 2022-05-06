@@ -1,7 +1,13 @@
 import security
+from twilio.rest import Client
 
 
 class SMSAlert:
+
+    """
+    This class houses function set_up which provides the set-up to send sms travel alert.
+    """
+
     def __init__(self):
         self.sms_number = security.sms_number
         self.account_sid = security.sms_sid

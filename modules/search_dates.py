@@ -1,6 +1,14 @@
 import datetime as dt
 
+
 class SearchDates:
+
+    """
+    This class houses function search_dates
+    provides users travel search dates based
+    upon the time user submits form
+    """
+
     def __init__(self):
         self.date = dt.datetime.today() - dt.timedelta(days=1)
         self.days = dt.timedelta(days=6 * 30)

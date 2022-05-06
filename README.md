@@ -11,7 +11,7 @@ A flight pricing search web application
  
  ## Description
  
- Search for the cheapest flight in a 6-month range departing & arriving to the user chosen destenation. Alerts can be received via text or email.
+ Search for the cheapest flight in a 6-month range departing & arriving to the user chosen destination. Alerts can be received via text or email.
  
  ### Features
  

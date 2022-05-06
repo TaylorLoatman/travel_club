@@ -3,6 +3,9 @@ import security
 
 
 class EmailAlert:
+    """
+     To send user email alert
+    """
 
     def __init__(self):
         self.sender = security.sender

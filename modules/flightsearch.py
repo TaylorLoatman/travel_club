@@ -1,7 +1,13 @@
 import security
+import requests
 
 
 class FlightSearch:
+    """
+    FlightSearch class has 2 functions to help user find flight deals
+    find_code finds user departure and arrival city code.
+    flight search takes users form input and outputs flight information
+    """
 
     def __init__(self):
         self.endpoint = security.flight_search_endpoint
