@@ -18,7 +18,9 @@ class SMSAlert:
 
         message = client.messages.create(
             body=f"Hi, {name}. Check out the deal we found! {dep_city} ({dep_code}) - {arri_city} ({arri_code} "
-                 f"{outbound_date} ${price}) {purchase_link}",
+                 f"1. {dep_code} - {arri_code} {outbound_date[0]} ${price[0]}) {purchase_link[0]}" 
+                 f"2. {dep_code} - {arri_code} {outbound_date[1]} ${price[1]}) {purchase_link[1]}" 
+                 f"3. {dep_code} - {arri_code} {outbound_date[2]} ${price[2]}) {purchase_link[2]}",
             from_=self.sms_number,
             to=f'+1{number}'
         )

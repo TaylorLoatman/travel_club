@@ -20,14 +20,15 @@ def home():
         communication = request.form['radio-selection']
         from_location = request.form['departure']
         to_location = request.form['city1']
-        start_date = search_dates.search_dates()['start_search']
-        to_date = search_dates.search_dates()['end_search']
+
+        selected_date = request.form['search_time']
+        start_date = search_dates.search_dates(selected_date)['start_search']
+        to_date = search_dates.search_dates(selected_date)['end_search']
 
         find_city_dep_code = flight_search.find_code(from_location)
         find_city_arri_code = flight_search.find_code(to_location)
 
         flight_config = flight_search.flight_information(find_city_dep_code, find_city_arri_code, start_date, to_date)
-
 
         if choice_communication == "phone":
             sms_alert.set_up(name, communication, flight_config['dep_city'], flight_config['dep_code'],

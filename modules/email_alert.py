@@ -18,5 +18,5 @@ class EmailAlert:
             connection.sendmail(
                 from_addr=self.sender,
                 to_addrs=sender,
-                msg=f"Subject:We Got the Dealzzzzz\n\nHi, {name}.\n Check out the deal we found! {dep_city} ({dep_code}) - {arri_city} ({arri_code})\n {outbound_date} ${price} {purchase_link}"
+                msg=f"Subject:We Got the Dealzzzzz\n\nHi, {name}.\n Check out the deal we found! {dep_city} ({dep_code}) - {arri_city} ({arri_code})\n 1. {outbound_date[0]} ${price[0]} {purchase_link[0]}\n 2. {outbound_date[1]} ${price[1]} {purchase_link[1]}\n 3. {outbound_date[2]} ${price[2]} {purchase_link[2]}"
             )
