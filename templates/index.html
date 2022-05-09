@@ -3,9 +3,9 @@
 {% block content %}
 <div class="container header">
     <h1>Welcome to the Travel Club! Let's Get Started!</h1>
-    <p>Trust, super easy to use. Give us your name, email or text message (what ever way your prefer communication)
-        and a list of 6 cities you would like to travel to within the next sit months... sit back, relax, and let us
-        find the deals!
+    <p>Trust, super easy to use. Give us your name, email or text message (whatever way you prefer communication)
+        and a list of the top 3 best prices for the destination you would like to travel to within your provided search
+        time... sit back, relax, and let us find the best deals for you!
     </p>
 </div>
 <div class="container">
@@ -22,15 +22,14 @@
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                      data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <strong>We need a name.</strong> C'mon, this is pretty self explanetory. Doesnt neccesarily have
-                        to
-                        be your real
-                        name. By all means if you want us to call your Lord Farqud, X-333triple87 that's your bee's wax.
+                        <strong>We need a name.</strong> C'mon, this is pretty self-explanatory. Doesn't necessarily have
+                        to be your real name. By all means, if you want us to call your Lord Farqud or X-333triple87
+                        that's your bee's wax.
                         <br>
                         <!--          <code>.accordion-body</code-->
                         <div class="form-group">
                             <input type="text" id="fname" class="form-control" name="name"
-                                   placeholder="Name, please :)">
+                                   placeholder="Name, please :)" required>
                         </div>
                     </div>
                 </div>
@@ -39,23 +38,22 @@
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        The digitssss <small> (orrrr email or proragative)</small>
+                        The digitssss... orrrr email or prerogative.
                     </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                      data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <strong>Just the basic forms of communication, duh.</strong>
-                        we need a phone number or email address, have no fear we wont spam ya.... unless you want us
-                        too.<br>
+                        <strong>Just the basic form of communication.</strong>
+                        We need a phone number or email address. Have no fear we won't spam you.... unless you want us.<br>
                         <div class="form-group">
-                            <input type="radio" id="phone" name="communication" value="phone">
+                            <input type="radio" id="phone" name="communication" value="phone" required>
                             <label for="phone">Text Alert</label>
 
-                            <input type="radio" id="email" name="communication" value="email">
+                            <input type="radio" id="email" name="communication" value="email" required>
                             <label for="phone">Email Alert</label>
 
-                            <input type="text" id="communication" name="radio-selection" class="form-control" placeholder="Please enter a phone number or email address">
+                            <input type="text" id="communication" name="radio-selection" class="form-control" placeholder="Please enter a phone number or email address" required>
                         </div>
                     </div>
                 </div>
@@ -70,8 +68,8 @@
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                      data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <strong>Let's get out of here!.</strong> Give us 6 cities you would like to travel to within the
-                        next <code>6 months</code>
+                        <strong>Let's get you out of here!.</strong> Give us your departure city and a destination you
+                        would like to travel to within the next <code>2 weeks, 1 month, 3 months or 6 months</code>
                         and we will text/email you the dealz! See E-Z!<br>
                         <div class="form-group">
                             <label for="search_time">What's the 'crunch time' on your search:</label>
@@ -83,9 +81,9 @@
                                 <option value="today">Today</option>
                             </select>
                             <input type="text" id="departure" name="departure" class="form-control"
-                                   placeholder="What city are we leaving?">
+                                   placeholder="What city are we leaving?" required>
                             <input type="text" id="city1" name="city1" class="form-control"
-                                   placeholder="Where are you headed?"> <br>
+                                   placeholder="Where are you headed?" required> <br>
                         </div>
 
                         <div class="form-group">
