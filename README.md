@@ -2,12 +2,12 @@
 
 A flight pricing search web application 
 
-<!-- <div align="center">
+<div align="center">
   <kbd>
-    <img src="https://i.imgur.com/zdY3ZC9.png" />
+    <img src="static/images/frontendphoto.png" />
   </kbd>
 </div>
- -->
+
  
  ## Description
  
